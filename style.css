@@ -1,0 +1,143 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        filter:hue-rotate(0deg);
+    }
+    100%
+    {
+        filter:hue-rotate(360deg);
+    }
+}
+.a1{
+   
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 15%;
+    background:#00adff;
+   
+    z-index:1;
+    mix-blend-mode:color ;
+    animation:animate 10s linear infinite;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+.a2{
+    text-shadow: 0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 40px rgba(255,255,255,1),
+    0 0 80px rgba(255,255,255,1),
+    0 0 160px rgba(255,255,255,1);
+}
+
+.header,.a3{
+    max-width: 100%;
+    margin-top: 95px;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: green;
+  }
+  div.desc1 {
+    padding: 15px;
+    text-align: center;
+    color: blue;
+  }
+  div.desc2 {
+    padding: 15px;
+    text-align: center;
+    color:salmon;
+  }
+  div.desc3 {
+    padding: 15px;
+    text-align: center;
+    color: violet;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+.g1{
+    margin-top: 20px;
+    
+}
+  
+  .img{
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+  }
+
+  .a3:hover .img {
+    opacity: 0.6;
+  }
+  
+  .a3:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    font-size: 30px;
+    padding: 16px 32px;
+    mix-blend-mode:color ;
+    animation:animate 1s linear infinite;
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 40px rgba(255,255,255,1),
+    0 0 80px rgba(255,255,255,1),
+    0 0 160px rgba(255,255,255,1);
+  }
+
+ .abc{
+     text-align: center;
+     color: red;
+     font-size: larger;
+ }
